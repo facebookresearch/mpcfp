@@ -213,8 +213,8 @@ def read_log_synth(logfile):
 def mnist_width_train(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Train Loss}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Train Loss}'
 
     widths = ['1e3', '1e4', '1e5', '1e6', '2e6', '5e6']
     Ys = []
@@ -245,8 +245,8 @@ def mnist_width_train(filename):
 def mnist_width_test(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Test Loss}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Test Loss}'
 
     widths = ['1e3', '1e4', '1e5', '1e6', '2e6', '5e6']
 
@@ -278,8 +278,8 @@ def mnist_width_test(filename):
 def covtype_width_train(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Train Loss}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Train Loss}'
 
     widths = ['1e3', '1e4', '1e5', '1e6', '2e6', '5e6', '1e7']
     Ys = []
@@ -310,8 +310,8 @@ def covtype_width_train(filename):
 def covtype_width_test(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Test Loss}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Test Loss}'
 
     widths = ['1e3', '1e4', '1e5', '1e6', '2e6', '5e6', '1e7']
 
@@ -343,8 +343,8 @@ def covtype_width_test(filename):
 def synth_width(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '$\mathbf{\|\\frac{x}{\|x\|} - \\frac{w}{\|w\|}\|}$'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'$\mathbf{\|\frac{x}{\|x\|} - \frac{w}{\|w\|}\|}$'
 
     widths = ['1e1', '1e2', '1e3', '1e4', '1e5', '1e6', '5e6']
 
@@ -376,8 +376,8 @@ def synth_width(filename):
 def synth_terms(filename):
     global color_counter
     color_counter = [0]
-    xlabel = '\\textbf{Terms}'
-    ylabel = '$\mathbf{\|\\frac{x}{\|x\|} - \\frac{w}{\|w\|}\|}$'
+    xlabel = r'\textbf{Terms}'
+    ylabel = r'$\mathbf{\|\frac{x}{\|x\|} - \frac{w}{\|w\|}\|}$'
 
     terms = list(range(6, 42, 2))
 
@@ -407,8 +407,8 @@ def synth_terms(filename):
 
 
 def mnist_multi(filename):
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Accuracy}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Accuracy}'
 
     widths = ['1e3', '1e4', '1e5', '1e6']
     files = ['mnist_width%d_multi.txt' % (int(float(w))) for w in widths]
@@ -436,8 +436,8 @@ def mnist_multi(filename):
 
 
 def covtype_multi(filename):
-    xlabel = '\\textbf{Width (}$\mathbf{\gamma}$\\textbf{)}'
-    ylabel = '\\textbf{Accuracy}'
+    xlabel = r'\textbf{Width (}$\mathbf{\gamma}$\textbf{)}'
+    ylabel = r'\textbf{Accuracy}'
 
     widths = ['1e3', '1e4', '1e5', '1e6']
     files = ['covtype_width%d_multi.txt' % (int(float(w))) for w in widths]
