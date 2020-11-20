@@ -5,7 +5,11 @@
 Clone the repo
 
 ```
-git clone git@github.com:fairinternal/mpcfp.git
+git clone https://github.com/facebookresearch/mpcfp.git
+```
+or
+```
+git clone git@github.com:facebookresearch/mpcfp.git
 ```
 
 Dependencies:
